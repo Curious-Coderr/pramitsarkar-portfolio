@@ -62,19 +62,58 @@ $plain = "New Project Enquiry\n"
 $logLine = '[' . date('c') . "]\n" . $plain . "\n";
 @file_put_contents(__DIR__ . '/contact-submissions.log', $logLine, FILE_APPEND | LOCK_EX);
 
-/* ---------- Attempt to send email (best effort) ---------- */
-$headers = [
-    'From: Portfolio Contact Form <' . $CONTACT_TO . '>',
-    'Reply-To: ' . $email,
-    'Content-Type: text/plain; charset=utf-8',
-    'MIME-Version: 1.0',
-];
-
-$sent = @mail($CONTACT_TO, $subject, $plain, implode("\r\n", $headers));
+/* ---------- Attempt to send email ---------- */
+$sent = false;
 
 /*
- * On typical hosting `mail()` succeeds. In local/dev environments without a
- * mail server it may fail — the enquiry is still saved to the log file above,
- * so we report success as long as the submission was captured.
+ * Preferred: Resend HTTP API (works on hosts where mail() is blocked,
+ * e.g. Render). Configure with env vars:
+ *   RESEND_API_KEY  — your Resend API key
+ *   RESEND_FROM     — verified sender, e.g. "Portfolio <onboarding@resend.dev>"
  */
+$resendKey  = getenv('RESEND_API_KEY') ?: '';
+$resendFrom = getenv('RESEND_FROM') ?: 'Portfolio Contact <onboarding@resend.dev>';
+
+if ($resendKey !== '' && function_exists('curl_init')) {
+    $payload = json_encode([
+        'from'     => $resendFrom,
+        'to'       => [$CONTACT_TO],
+        'reply_to' => $email,
+        'subject'  => $subject,
+        'text'     => $plain,
+    ]);
+
+    $ch = curl_init('https://api.resend.com/emails');
+    curl_setopt_array($ch, [
+        CURLOPT_POST           => true,
+        CURLOPT_POSTFIELDS     => $payload,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT        => 15,
+        CURLOPT_HTTPHEADER     => [
+            'Authorization: Bearer ' . $resendKey,
+            'Content-Type: application/json',
+        ],
+    ]);
+    $response = curl_exec($ch);
+    $status   = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    $sent = ($status >= 200 && $status < 300);
+}
+
+/*
+ * Fallback: PHP mail() for hosts that support it. On environments without a
+ * configured mail server this fails silently — the enquiry is still saved to
+ * the log file above, so we report success as long as it was captured.
+ */
+if (!$sent) {
+    $headers = [
+        'From: Portfolio Contact Form <' . $CONTACT_TO . '>',
+        'Reply-To: ' . $email,
+        'Content-Type: text/plain; charset=utf-8',
+        'MIME-Version: 1.0',
+    ];
+    $sent = @mail($CONTACT_TO, $subject, $plain, implode("\r\n", $headers));
+}
+
 echo json_encode(['success' => true, 'delivered' => (bool) $sent]);

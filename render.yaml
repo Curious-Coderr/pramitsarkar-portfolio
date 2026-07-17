@@ -7,3 +7,7 @@ services:
     envVars:
       - key: CONTACT_EMAIL
         value: pramitsarkar.work@gmail.com
+      - key: RESEND_FROM
+        value: Portfolio Contact <onboarding@resend.dev>
+      - key: RESEND_API_KEY
+        sync: false

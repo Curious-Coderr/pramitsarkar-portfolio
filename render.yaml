@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: pramitsarkar-portfolio
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: CONTACT_EMAIL
+        value: pramitsarkar.work@gmail.com

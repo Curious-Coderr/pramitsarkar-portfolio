@@ -1,0 +1,24 @@
+# Pretty URLs for case studies:  /projects/{slug}  ->  project.php?slug={slug}
+# (Optional — the site also works with the plain project.php?slug= links.)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # /projects  ->  projects.php  (the full "all projects" listing page)
+    RewriteRule ^projects/?$ projects.php [L,QSA]
+
+    # /projects/my-slug  ->  project.php?slug=my-slug
+    RewriteRule ^projects/([A-Za-z0-9_-]+)/?$ project.php?slug=$1 [L,QSA]
+</IfModule>
+
+# Default document
+DirectoryIndex index.php
+
+# Basic caching for static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 7 days"
+    ExpiresByType application/javascript "access plus 7 days"
+    ExpiresByType image/png "access plus 30 days"
+    ExpiresByType image/jpeg "access plus 30 days"
+    ExpiresByType image/svg+xml "access plus 30 days"
+</IfModule>

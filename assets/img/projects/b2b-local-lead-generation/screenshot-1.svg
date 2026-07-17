@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" font-family="'Inter Tight','Inter','Segoe UI',Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F6F2"/>
+      <stop offset="1" stop-color="#E9EDFF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2545E8"/>
+      <stop offset="1" stop-color="#5B76FF"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="26" flood-color="#141412" flood-opacity="0.14"/>
+    </filter>
+    <clipPath id="cardClip"><rect x="70" y="176" width="690" height="500" rx="20"/></clipPath>
+    <clipPath id="mapClip"><rect x="800" y="176" width="330" height="500" rx="20"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+
+  <!-- Heading -->
+  <text x="70" y="78" fill="#2545E8" font-size="20" font-weight="700" letter-spacing="3">B2B LOCAL LEAD GENERATION</text>
+  <text x="70" y="132" fill="#141412" font-size="40" font-weight="700">Geo-tagged business leads, ready to import</text>
+
+  <!-- Lead-list card -->
+  <rect x="70" y="176" width="690" height="500" rx="20" fill="#FFFFFF" filter="url(#shadow)"/>
+  <g clip-path="url(#cardClip)">
+    <rect x="70" y="176" width="690" height="500" fill="#FFFFFF"/>
+    <!-- Card title bar -->
+    <rect x="70" y="176" width="690" height="66" fill="url(#accent)"/>
+    <text x="96" y="217" fill="#FFFFFF" font-size="21" font-weight="600">Restaurant leads · Nadia district</text>
+    <rect x="596" y="192" width="140" height="34" rx="17" fill="#FFFFFF" fill-opacity="0.18"/>
+    <text x="666" y="215" fill="#FFFFFF" font-size="15" font-weight="600" text-anchor="middle">CSV / Sheets</text>
+
+    <!-- Column headers -->
+    <text x="96"  y="278" fill="#75746B" font-size="14" font-weight="700" letter-spacing="1">NAME</text>
+    <text x="360" y="278" fill="#75746B" font-size="14" font-weight="700" letter-spacing="1">MOBILE</text>
+    <text x="548" y="278" fill="#75746B" font-size="14" font-weight="700" letter-spacing="1">RATING</text>
+    <text x="640" y="278" fill="#75746B" font-size="14" font-weight="700" letter-spacing="1">CITY</text>
+    <line x1="90" y1="296" x2="740" y2="296" stroke="#E4E2D9" stroke-width="1.5"/>
+
+    <!-- Rows -->
+    <g font-size="19">
+      <!-- row 1 -->
+      <rect x="70" y="304" width="690" height="58" fill="#F5F4F0"/>
+      <text x="96"  y="340" fill="#141412" font-weight="600">Royal Hut Restaurant</text>
+      <text x="360" y="340" fill="#45443F">9836&#8226;&#8226;&#8226;&#8226;67</text>
+      <text x="548" y="340" fill="#1E9E5A" font-weight="600">4.6</text>
+      <text x="640" y="340" fill="#45443F">Kalyani</text>
+      <!-- row 2 -->
+      <text x="96"  y="398" fill="#141412" font-weight="600">Chowman</text>
+      <text x="360" y="398" fill="#45443F">9330&#8226;&#8226;&#8226;&#8226;30</text>
+      <text x="548" y="398" fill="#1E9E5A" font-weight="600">4.4</text>
+      <text x="640" y="398" fill="#45443F">Kalyani</text>
+      <!-- row 3 -->
+      <rect x="70" y="420" width="690" height="58" fill="#F5F4F0"/>
+      <text x="96"  y="456" fill="#141412" font-weight="600">Rollacosta</text>
+      <text x="360" y="456" fill="#45443F">9804&#8226;&#8226;&#8226;&#8226;40</text>
+      <text x="548" y="456" fill="#1E9E5A" font-weight="600">4.1</text>
+      <text x="640" y="456" fill="#45443F">Kalyani</text>
+      <!-- row 4 -->
+      <text x="96"  y="514" fill="#141412" font-weight="600">Mommozi</text>
+      <text x="360" y="514" fill="#45443F">9064&#8226;&#8226;&#8226;&#8226;81</text>
+      <text x="548" y="514" fill="#1E9E5A" font-weight="600">4.7</text>
+      <text x="640" y="514" fill="#45443F">Krishnanagar</text>
+      <!-- row 5 -->
+      <rect x="70" y="536" width="690" height="58" fill="#F5F4F0"/>
+      <text x="96"  y="572" fill="#141412" font-weight="600">Rannabati</text>
+      <text x="360" y="572" fill="#45443F">9609&#8226;&#8226;&#8226;&#8226;12</text>
+      <text x="548" y="572" fill="#1E9E5A" font-weight="600">3.8</text>
+      <text x="640" y="572" fill="#45443F">Krishnanagar</text>
+      <!-- row 6 -->
+      <text x="96"  y="630" fill="#141412" font-weight="600">Mother&#39;s Hut</text>
+      <text x="360" y="630" fill="#45443F">9002&#8226;&#8226;&#8226;&#8226;99</text>
+      <text x="548" y="630" fill="#1E9E5A" font-weight="600">4.3</text>
+      <text x="640" y="630" fill="#45443F">Bhatjangla</text>
+    </g>
+  </g>
+  <rect x="70" y="176" width="690" height="500" rx="20" fill="none" stroke="#E4E2D9" stroke-width="1.5"/>
+
+  <!-- Map panel -->
+  <rect x="800" y="176" width="330" height="500" rx="20" fill="#FFFFFF" filter="url(#shadow)"/>
+  <g clip-path="url(#mapClip)">
+    <rect x="800" y="176" width="330" height="500" fill="#FBFAF7"/>
+    <!-- faint grid -->
+    <g stroke="#E4E2D9" stroke-width="1">
+      <line x1="855" y1="176" x2="855" y2="676"/>
+      <line x1="910" y1="176" x2="910" y2="676"/>
+      <line x1="965" y1="176" x2="965" y2="676"/>
+      <line x1="1020" y1="176" x2="1020" y2="676"/>
+      <line x1="1075" y1="176" x2="1075" y2="676"/>
+      <line x1="800" y1="286" x2="1130" y2="286"/>
+      <line x1="800" y1="396" x2="1130" y2="396"/>
+      <line x1="800" y1="506" x2="1130" y2="506"/>
+      <line x1="800" y1="616" x2="1130" y2="616"/>
+    </g>
+    <text x="826" y="222" fill="#75746B" font-size="15" font-weight="700" letter-spacing="1">MAPPED &amp; GEOCODED</text>
+
+    <!-- connecting lines -->
+    <g stroke="#2545E8" stroke-width="1.5" stroke-opacity="0.35" stroke-dasharray="4 5">
+      <line x1="965" y1="470" x2="880" y2="320"/>
+      <line x1="965" y1="470" x2="1050" y2="300"/>
+      <line x1="965" y1="470" x2="1055" y2="560"/>
+      <line x1="965" y1="470" x2="865" y2="590"/>
+    </g>
+
+    <!-- pins (accent) -->
+    <g fill="#2545E8">
+      <g transform="translate(880,320)"><path d="M0,0 C-9,-13 -16,-20 -16,-31 a16,16 0 1,1 32,0 C16,-20 9,-13 0,0 Z"/><circle cx="0" cy="-31" r="6" fill="#FFFFFF"/></g>
+      <g transform="translate(1050,300)"><path d="M0,0 C-9,-13 -16,-20 -16,-31 a16,16 0 1,1 32,0 C16,-20 9,-13 0,0 Z"/><circle cx="0" cy="-31" r="6" fill="#FFFFFF"/></g>
+      <g transform="translate(1055,560)"><path d="M0,0 C-9,-13 -16,-20 -16,-31 a16,16 0 1,1 32,0 C16,-20 9,-13 0,0 Z"/><circle cx="0" cy="-31" r="6" fill="#FFFFFF"/></g>
+      <g transform="translate(865,590)"><path d="M0,0 C-9,-13 -16,-20 -16,-31 a16,16 0 1,1 32,0 C16,-20 9,-13 0,0 Z"/><circle cx="0" cy="-31" r="6" fill="#FFFFFF"/></g>
+    </g>
+    <!-- highlighted pin (green) -->
+    <g transform="translate(965,470)" fill="#1E9E5A">
+      <path d="M0,0 C-11,-16 -20,-25 -20,-39 a20,20 0 1,1 40,0 C20,-25 11,-16 0,0 Z"/>
+      <circle cx="0" cy="-39" r="8" fill="#FFFFFF"/>
+    </g>
+    <!-- coordinate tag -->
+    <rect x="905" y="486" width="176" height="34" rx="8" fill="#141412"/>
+    <text x="993" y="509" fill="#FFFFFF" font-size="15" text-anchor="middle" font-family="'Inter',monospace">23.0801, 88.4384</text>
+  </g>
+  <rect x="800" y="176" width="330" height="500" rx="20" fill="none" stroke="#E4E2D9" stroke-width="1.5"/>
+
+  <!-- footer chips -->
+  <g font-size="16" fill="#45443F" font-weight="600">
+    <rect x="70" y="700" width="240" height="34" rx="17" fill="#FFFFFF" stroke="#E4E2D9"/>
+    <text x="190" y="723" text-anchor="middle">Name · Mobile · Email</text>
+    <rect x="326" y="700" width="250" height="34" rx="17" fill="#FFFFFF" stroke="#E4E2D9"/>
+    <text x="451" y="723" text-anchor="middle">Rating · Reviews · Category</text>
+    <rect x="592" y="700" width="230" height="34" rx="17" fill="#FFFFFF" stroke="#E4E2D9"/>
+    <text x="707" y="723" text-anchor="middle">Latitude · Longitude</text>
+  </g>
+</svg>

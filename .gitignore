@@ -1,0 +1,11 @@
+# Contact form submissions log (runtime data)
+contact-submissions.log
+
+# OS / editor
+Thumbs.db
+.DS_Store
+*.log
+
+# Tooling
+.agents/
+.junie/

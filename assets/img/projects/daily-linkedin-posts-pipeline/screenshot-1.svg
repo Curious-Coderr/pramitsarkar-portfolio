@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" font-family="'Inter Tight','Inter','Segoe UI',Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EEF4FB"/>
+      <stop offset="1" stop-color="#E4EEFA"/>
+    </linearGradient>
+    <linearGradient id="ai" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A66C2"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="30" flood-color="#0A2540" flood-opacity="0.18"/>
+    </filter>
+    <clipPath id="win"><rect x="678" y="96" width="452" height="558" rx="22"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+
+  <!-- Left content -->
+  <text x="80" y="196" fill="#0A66C2" font-size="20" font-weight="700" letter-spacing="3">AI LINKEDIN AUTOMATION</text>
+  <text x="80" y="262" fill="#0A2540" font-size="46" font-weight="700">16 posts a day,</text>
+  <text x="80" y="316" fill="#0A2540" font-size="46" font-weight="700">written &amp; scheduled</text>
+  <text x="80" y="370" fill="#0A2540" font-size="46" font-weight="700">by AI</text>
+  <text x="80" y="420" fill="#33445A" font-size="21">Fetches trends, writes the posts, builds</text>
+  <text x="80" y="450" fill="#33445A" font-size="21">carousels &amp; infographics, and schedules</text>
+  <text x="80" y="480" fill="#33445A" font-size="21">everything &#8212; completely hands-free.</text>
+
+  <!-- pipeline flow -->
+  <g font-size="15" font-weight="700" text-anchor="middle">
+    <rect x="80" y="524" width="118" height="52" rx="12" fill="#fff" stroke="#CFE0F2"/>
+    <text x="139" y="547" fill="#0A66C2">Fetch</text>
+    <text x="139" y="565" fill="#8AA0B8" font-size="12">trends</text>
+    <path d="M204 550 h22" stroke="#9CB6D2" stroke-width="3" fill="none" marker-end="url(#arw)"/>
+    <rect x="232" y="524" width="118" height="52" rx="12" fill="#fff" stroke="#CFE0F2"/>
+    <text x="291" y="547" fill="#7C3AED">AI writes</text>
+    <text x="291" y="565" fill="#8AA0B8" font-size="12">posts</text>
+    <path d="M356 550 h22" stroke="#9CB6D2" stroke-width="3" fill="none" marker-end="url(#arw)"/>
+    <rect x="384" y="524" width="118" height="52" rx="12" fill="#fff" stroke="#CFE0F2"/>
+    <text x="443" y="547" fill="#0A66C2">Build</text>
+    <text x="443" y="565" fill="#8AA0B8" font-size="12">visuals</text>
+    <path d="M508 550 h22" stroke="#9CB6D2" stroke-width="3" fill="none" marker-end="url(#arw)"/>
+    <rect x="536" y="524" width="118" height="52" rx="12" fill="#0A66C2"/>
+    <text x="595" y="547" fill="#fff">Schedule</text>
+    <text x="595" y="565" fill="#BBD4EE" font-size="12">auto</text>
+  </g>
+  <defs>
+    <marker id="arw" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#9CB6D2"/></marker>
+  </defs>
+
+  <!-- LinkedIn post window -->
+  <g filter="url(#shadow)">
+    <rect x="678" y="96" width="452" height="558" rx="22" fill="#ffffff"/>
+  </g>
+  <g clip-path="url(#win)">
+    <!-- header -->
+    <rect x="678" y="96" width="452" height="70" fill="#F3F6FA"/>
+    <rect x="704" y="112" width="38" height="38" rx="8" fill="#0A66C2"/>
+    <text x="723" y="139" fill="#fff" font-size="22" font-weight="800" text-anchor="middle">in</text>
+    <text x="756" y="128" fill="#0A2540" font-size="17" font-weight="700">Your Brand</text>
+    <text x="756" y="149" fill="#7D93A8" font-size="13">Scheduled &#183; 4 posts today</text>
+    <!-- AI badge -->
+    <rect x="986" y="112" width="118" height="34" rx="17" fill="url(#ai)"/>
+    <text x="1045" y="134" fill="#fff" font-size="13" font-weight="700" text-anchor="middle">&#9889; Auto by AI</text>
+
+    <!-- post body -->
+    <text x="704" y="206" fill="#0A2540" font-size="17" font-weight="700">Where AI is taking the future of work</text>
+    <rect x="704" y="222" width="400" height="11" rx="5" fill="#E6ECF3"/>
+    <rect x="704" y="243" width="378" height="11" rx="5" fill="#E6ECF3"/>
+    <rect x="704" y="264" width="340" height="11" rx="5" fill="#E6ECF3"/>
+
+    <!-- carousel slides -->
+    <rect x="704" y="296" width="400" height="196" rx="12" fill="#0F172A"/>
+    <rect x="726" y="322" width="150" height="14" rx="7" fill="#7C3AED"/>
+    <rect x="726" y="352" width="356" height="10" rx="5" fill="#33415A"/>
+    <rect x="726" y="374" width="356" height="10" rx="5" fill="#33415A"/>
+    <rect x="726" y="396" width="300" height="10" rx="5" fill="#33415A"/>
+    <!-- mini bars in slide -->
+    <rect x="726" y="430" width="24" height="40" rx="4" fill="#0A66C2"/>
+    <rect x="758" y="418" width="24" height="52" rx="4" fill="#3B82F6"/>
+    <rect x="790" y="440" width="24" height="30" rx="4" fill="#7C3AED"/>
+    <rect x="822" y="424" width="24" height="46" rx="4" fill="#22D3EE"/>
+    <text x="1058" y="480" fill="#64748B" font-size="12" font-weight="700" text-anchor="end">1 / 7</text>
+
+    <!-- engagement -->
+    <circle cx="716" cy="530" r="12" fill="#EAF1F8"/>
+    <text x="716" y="535" fill="#0A66C2" font-size="13" text-anchor="middle" font-weight="800">&#9650;</text>
+    <text x="740" y="535" fill="#5B7189" font-size="14" font-weight="600">1,204</text>
+    <circle cx="828" cy="530" r="12" fill="#EAF1F8"/>
+    <text x="852" y="535" fill="#5B7189" font-size="14" font-weight="600">86 comments</text>
+    <text x="1104" y="535" fill="#5B7189" font-size="14" font-weight="600" text-anchor="end">32 reposts</text>
+  </g>
+</svg>

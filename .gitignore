@@ -1,11 +1,27 @@
-# Contact form submissions log (runtime data)
-contact-submissions.log
-
-# OS / editor
+# ─── OS / editor junk ─────────────────────────────────────────────
 Thumbs.db
 .DS_Store
+*.swp
+*~
+.idea/
+.vscode/
+
+# ─── Runtime data ─────────────────────────────────────────────────
+# Contact-form submissions log (written at runtime)
+contact-submissions.log
 *.log
 
-# Tooling
+# ─── Environment / secrets ───────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ─── Dependencies (none currently, kept for safety) ──────────────
+vendor/
+
+# ─── Local working folders (not part of the site) ────────────────
+linkedin projects/
+
+# ─── Tooling / agent scratch ─────────────────────────────────────
 .agents/
 .junie/

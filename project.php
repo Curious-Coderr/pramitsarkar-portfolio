@@ -53,6 +53,10 @@ require __DIR__ . '/includes/header.php';
                     $statusClass = 'tag-live';
                 } elseif ($project['status'] === 'In Development') {
                     $statusClass = 'tag-dev';
+                } elseif ($project['status'] === 'Archived') {
+                    $statusClass = 'tag-archived';
+                } elseif ($project['status'] === 'Service') {
+                    $statusClass = 'tag-service';
                 }
             ?>
             <span class="category-tag <?= $statusClass ?>"><?= htmlspecialchars($project['status']) ?></span>

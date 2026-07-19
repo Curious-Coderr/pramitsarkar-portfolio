@@ -1021,6 +1021,25 @@ h1, h2, h3, h4 {
     background: #E8971A;
     margin-right: 6px;
 }
+.tag-archived {
+    color: var(--muted);
+    border-color: var(--line);
+    background: rgba(120,120,120,.10);
+}
+.tag-archived::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--muted);
+    margin-right: 6px;
+    opacity: .7;
+}
+.tag-service {
+    color: #3D5AF1;
+    border-color: rgba(61,90,241,.35);
+    background: rgba(61,90,241,.10);
+}
 
 .project-body {
     display: flex;

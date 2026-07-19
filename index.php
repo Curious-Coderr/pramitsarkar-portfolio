@@ -207,6 +207,10 @@
                                     <span class="category-tag tag-live">Live</span>
                                 <?php elseif ($p['status'] === 'In Development'): ?>
                                     <span class="category-tag tag-dev">In Development</span>
+                                <?php elseif ($p['status'] === 'Archived'): ?>
+                                    <span class="category-tag tag-archived">Archived</span>
+                                <?php elseif ($p['status'] === 'Service'): ?>
+                                    <span class="category-tag tag-service">Service</span>
                                 <?php endif; ?>
                             </div>
                         </a>

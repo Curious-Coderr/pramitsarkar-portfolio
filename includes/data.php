@@ -239,6 +239,7 @@ $PROJECTS = [
     [
         'slug'      => 'mediascape-digital-marketing-agency',
         'featured'  => true,
+        'priority'  => 20,
         'title'     => 'Mediascape — Digital Marketing Agency',
         'category'  => 'Web',
         'status'    => 'Live',
@@ -278,7 +279,7 @@ $PROJECTS = [
 
     [
         'slug'      => 'restaurant-website-flavours-of-ranaghat',
-        'featured'  => true,
+        'priority'  => 70,
         'title'     => 'Restaurant Website & Reservation System',
         'category'  => 'Web',
         'status'    => 'Live',
@@ -317,6 +318,7 @@ $PROJECTS = [
     [
         'slug'      => 'india-smm-panel',
         'featured'  => true,
+        'priority'  => 10,
         'title'     => 'India SMM Panel',
         'category'  => 'Web',
         'status'    => 'Live',
@@ -350,6 +352,7 @@ $PROJECTS = [
     [
         'slug'      => 'trendbazar-print-on-demand',
         'featured'  => true,
+        'priority'  => 60,
         'title'     => 'TrendBazar — Trending Fashion Store',
         'category'  => 'Ecommerce',
         'status'    => 'Live',
@@ -385,6 +388,7 @@ $PROJECTS = [
     [
         'slug'      => 'woocommerce-ecommerce-store',
         'featured'  => true,
+        'priority'  => 50,
         'title'     => 'Arpisu — Nexva Fashion WooCommerce Store',
         'category'  => 'Ecommerce',
         'status'    => 'Live',
@@ -423,6 +427,7 @@ $PROJECTS = [
     [
         'slug'      => 'whatsapp-ai-chatbot-restaurant',
         'featured'  => true,
+        'priority'  => 30,
         'title'     => 'WhatsApp AI Chatbot for Restaurants',
         'category'  => 'AI',
         'status'    => 'Live',
@@ -454,6 +459,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'spin-and-win-web-app',
+        'priority'  => 90,
         'title'     => 'Spin & Win — Gamified Lead-Capture Web App',
         'category'  => 'Web',
         'status'    => 'Live',
@@ -485,6 +491,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'techdaddy-tech-store',
+        'priority'  => 100,
         'title'     => 'TechDaddy — Tech Shopping Platform',
         'category'  => 'Ecommerce',
         'status'    => 'Live',
@@ -515,6 +522,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'depthroute-voip-platform',
+        'priority'  => 80,
         'title'     => 'Depth Route — Business VoIP Platform',
         'category'  => 'Web',
         'status'    => 'Live',
@@ -545,6 +553,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'any-call-agency-dashboard',
+        'priority'  => 170,
         'title'     => 'Any Call Agency — Management Dashboard',
         'category'  => 'Web',
         'status'    => 'Live',
@@ -574,6 +583,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'orbit-media-agency',
+        'priority'  => 140,
         'title'     => 'Orbit Media — Creative & Digital Agency',
         'category'  => 'Web',
         'status'    => 'Live',
@@ -603,6 +613,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'premangshu-sarkar-workfolio',
+        'priority'  => 150,
         'title'     => 'Premangshu Sarkar — Creative Workfolio',
         'category'  => 'Web',
         'status'    => 'Live',
@@ -632,6 +643,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'the-prime-fitness-gym',
+        'priority'  => 160,
         'title'     => 'The Prime Fitness — Gym & Fitness Website',
         'category'  => 'Web',
         'status'    => 'Live',
@@ -661,6 +673,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'endoorthon-dental-store',
+        'priority'  => 110,
         'title'     => 'Endoorthon — Dental Equipment Store',
         'category'  => 'Ecommerce',
         'status'    => 'Live',
@@ -691,6 +704,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'megashop-online-store',
+        'priority'  => 220,
         'title'     => 'MegaShop — Online Shopping Store',
         'category'  => 'Ecommerce',
         'status'    => 'Archived',
@@ -720,6 +734,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'indian-watchdogs-portal',
+        'priority'  => 250,
         'title'     => 'Indian Watchdogs — Awareness & Reporting Portal',
         'category'  => 'Web',
         'status'    => 'Archived',
@@ -749,6 +764,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'hax0r-tech-blog',
+        'priority'  => 240,
         'title'     => 'Hax0r.tech — Cybersecurity & Tech Blog',
         'category'  => 'Web',
         'status'    => 'Archived',
@@ -778,6 +794,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'crack4pc-download-portal',
+        'priority'  => 230,
         'title'     => 'Crack4PC — Software Download Portal',
         'category'  => 'Web',
         'status'    => 'Archived',
@@ -807,6 +824,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'bongfest-cultural-events',
+        'priority'  => 130,
         'title'     => 'Bong Fest — Cultural Event Management',
         'category'  => 'Web',
         'status'    => 'Live',
@@ -839,6 +857,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'b2b-local-lead-generation',
+        'priority'  => 200,
         'title'     => 'B2B Local Lead Generation Service',
         'category'  => 'Automation',
         'status'    => 'Service',
@@ -890,6 +909,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'edumanage-pro-school-lms',
+        'priority'  => 180,
         'title'     => 'EduManage Pro — School Management System & LMS',
         'category'  => 'Web',
         'status'    => 'In Development',
@@ -926,6 +946,8 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'daily-linkedin-posts-pipeline',
+        'featured'  => true,
+        'priority'  => 40,
         'title'     => 'AI LinkedIn Content Engine — Auto-Posting Pipeline',
         'category'  => 'AI',
         'status'    => 'Live',
@@ -958,6 +980,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'local-seo-india-generator',
+        'priority'  => 210,
         'title'     => 'Local SEO India — Programmatic Page Generator',
         'category'  => 'Automation',
         'status'    => 'In Development',
@@ -989,6 +1012,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'agency-client-portal',
+        'priority'  => 190,
         'title'     => 'AgencyOS — Digital Marketing Agency Management System',
         'category'  => 'Web',
         'status'    => 'In Development',
@@ -1025,6 +1049,7 @@ $PROJECTS = [
     ],
     [
         'slug'      => 'dr-shyama-prasad-mukherjee-foundation',
+        'priority'  => 120,
         'title'     => 'Dr. Shyama Prasad Mukherjee Foundation — NGO Website',
         'category'  => 'Web',
         'status'    => 'Live',
@@ -1058,6 +1083,13 @@ $PROJECTS = [
     ],
 ];
 
+/*
+ * Order every project by editorial priority (lower number = higher value, shown first).
+ * This drives the ordering on the homepage, the full projects page and the
+ * prev/next case-study navigation. Projects without a priority sink to the bottom.
+ */
+usort($PROJECTS, static fn(array $a, array $b): int => ($a['priority'] ?? 9999) <=> ($b['priority'] ?? 9999));
+
 $PROJECT_CATEGORIES = ['All', 'Web', 'Ecommerce', 'AI', 'Automation'];
 
 
@@ -1079,11 +1111,14 @@ function find_project(string $slug): ?array
 }
 
 /**
- * The handful of flagship projects shown on the homepage (`'featured' => true`).
+ * The top flagship projects shown on the homepage.
+ * These are the highest-value projects (`'featured' => true`), returned in
+ * priority order and capped at 6 so the homepage always shows the best six.
  * Everything else lives on the full "All projects" page (projects.php).
  */
-function get_featured_projects(): array
+function get_featured_projects(int $limit = 6): array
 {
     global $PROJECTS;
-    return array_values(array_filter($PROJECTS, static fn(array $p): bool => !empty($p['featured'])));
+    $featured = array_values(array_filter($PROJECTS, static fn(array $p): bool => !empty($p['featured'])));
+    return array_slice($featured, 0, $limit);
 }
